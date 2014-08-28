@@ -3,7 +3,6 @@ from doubly_linked_list import DoublyLinkedList
 
 class TestDoublyLinkedList(unittest.TestCase):
 
-
 	def setUp(self):
 		self.emptyList = DoublyLinkedList()
 		self.oneItemList = DoublyLinkedList()
@@ -22,7 +21,6 @@ class TestDoublyLinkedList(unittest.TestCase):
 
 		for i in self.five:
 			self.fiveItemList.append(i)
-
 
 	def testEmptyAppend(self):
 		self.emptyList.append(4)

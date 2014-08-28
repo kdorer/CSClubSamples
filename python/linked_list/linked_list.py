@@ -49,7 +49,11 @@ class LinkedList:
 					current = current.getNext()
 
 	def removeBeginning(self):
-		self.head = self.head.getNext()
+		if self.head is None:
+			return None
+		else:
+			self.head = self.head.getNext()
+			return True
 
 	def removeAfter(self, position):
 		counter = 0
